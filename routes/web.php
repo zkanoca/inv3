@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('search')->middleware('auth');
 
 Auth::routes();
 
@@ -25,4 +24,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/search', [App\Http\Controllers\SearchController::class, 'index'])->name('search')->middleware('auth');
+Route::get('/search',  [App\Http\Controllers\SearchController::class, 'index'])->name('search')->middleware('auth');

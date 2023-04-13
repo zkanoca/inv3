@@ -5,7 +5,7 @@
  * Date: 19.04.2017
  * Time: 10:03
  */
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\EDM;
 
 
 

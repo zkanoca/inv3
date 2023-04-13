@@ -6,7 +6,7 @@
  * Time: 14:39
  */
 
- namespace App\Http\Controllers;
+ namespace App\Http\Controllers\EDM;
 
 
 
