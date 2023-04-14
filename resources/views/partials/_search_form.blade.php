@@ -15,7 +15,7 @@
                         <div class="form-group">
                             <div class="input-group mb-3">
                                 <input type="text" name="invoiceID" class="form-control" placeholder="Fatura numarası"
-                                    aria-label="Fatura numarası" aria-describedby="button-addon2">
+                                    aria-label="Fatura numarası" aria-describedby="button-addon2" value="{{old('invoiceID')}}">
                                 <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Ara</button>
                             </div>
                         </div>
